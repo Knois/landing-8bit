@@ -8,7 +8,7 @@ const App = () => {
       </div>
       <a
         className="room"
-        href="https://oncyber.io/explore"
+        href="https://oncyber.io/spaces/3z5tTTY2hjPgFftDQGI4"
         target="_blank"
         rel="noreferrer"
       >
@@ -22,7 +22,7 @@ const App = () => {
           <div className="scroll__box__string">
             <a
               className="scroll__text"
-              href="https://opensea.io/"
+              href="https://opensea.io/collection/chapter-alpha"
               target="_blank"
               rel="noreferrer"
             >
@@ -30,7 +30,7 @@ const App = () => {
             </a>
             <a
               className="scroll__icon_one"
-              href="https://opensea.io/"
+              href="https://opensea.io/collection/chapter-alpha"
               target="_blank"
               rel="noreferrer"
             >
@@ -40,7 +40,7 @@ const App = () => {
           <div className="scroll__box__string">
             <a
               className="scroll__text"
-              href="https://opensea.io/"
+              href="https://oncyber.io/spaces/3z5tTTY2hjPgFftDQGI4"
               target="_blank"
               rel="noreferrer"
             >
@@ -48,7 +48,7 @@ const App = () => {
             </a>
             <a
               className="scroll__icon_two"
-              href="https://opensea.io/"
+              href="https://oncyber.io/spaces/3z5tTTY2hjPgFftDQGI4"
               target="_blank"
               rel="noreferrer"
             >
