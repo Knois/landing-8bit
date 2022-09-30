@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("../fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+}
+
+* {
+  font-family: "VCR OSD Mono";
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(1.5px);
+}
+
+.header__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d2820a;
+}
+
+.room {
+  height: 362px;
+  width: 415px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/room.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 106px;
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.room:hover .room__text {
+  color: black;
+}
+
+.room__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ecd616;
+  mix-blend-mode: luminosity;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #faff0a;
+  transition: color 0.1s ease-in-out;
+}
+
+.scroll {
+  transition: all 0.2s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  height: 315px;
+  width: 621px;
+  background-image: url("../img/scroll.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.scroll__chapter {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: start;
+  text-transform: uppercase;
+  backdrop-filter: blur(2px);
+  top: 83px;
+  left: 79px;
+  color: #fc3458;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.scroll__box {
+  position: absolute;
+  top: 135px;
+  left: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 33px;
+  transition: all 0.2s ease-in-out;
+}
+
+.scroll__box__string {
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 265px;
+}
+
+.scroll__text {
+  transition: all 0.2s ease-in-out;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fc3458;
+  cursor: pointer;
+}
+
+.scroll__text:hover {
+  color: green;
+}
+
+.scroll__icon_one {
+  transition: all 0.2s ease-in-out;
+  width: 28px;
+  height: 30px;
+  background-image: url("../img/icon1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.scroll__icon_two {
+  transition: all 0.2s ease-in-out;
+  width: 28px;
+  height: 30px;
+  background-image: url("../img/icon2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll {
+    height: 199px;
+    width: 390px;
+  }
+
+  .room {
+    height: 245px;
+    width: 285px;
+  }
+
+  .scroll__chapter {
+    font-size: 16px;
+    line-height: 16px;
+    left: 65px;
+    top: 60px;
+  }
+  .scroll__box {
+    left: 65px;
+    top: 90px;
+    gap: 10px;
+  }
+
+  .scroll__box__string {
+    width: 200px;
+  }
+
+  .scroll__text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .scroll__icon_one {
+    width: 22px;
+    height: 23px;
+  }
+
+  .scroll__icon_two {
+    width: 22px;
+    height: 23px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .scroll {
+    height: 158px;
+    width: 310px;
+  }
+
+  .scroll__chapter {
+    font-size: 16px;
+    line-height: 16px;
+    left: 50px;
+    top: 45px;
+  }
+
+  .scroll__box {
+    left: 50px;
+    top: 70px;
+    gap: 10px;
+  }
+
+  .scroll__icon_one {
+    width: 18px;
+    height: 18px;
+  }
+
+  .scroll__icon_two {
+    width: 18px;
+    height: 18px;
+  }
+}
