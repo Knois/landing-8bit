@@ -146,6 +146,20 @@ body {
 .scroll__text:hover {
   color: green;
 }
+.scroll__icon_one:hover {
+  filter: drop-shadow(2px 2px 0.8rem green);
+}
+.scroll__icon_two:hover {
+  filter: drop-shadow(2px 2px 0.8rem green);
+}
+
+.scroll__text:hover ~ .scroll__icon_one {
+  filter: drop-shadow(2px 2px 0.8rem green);
+}
+
+.scroll__text:hover ~ .scroll__icon_two {
+  filter: drop-shadow(2px 2px 0.8rem green);
+}
 
 .scroll__icon_one {
   transition: all 0.2s ease-in-out;
